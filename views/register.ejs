@@ -1,19 +1,95 @@
-<link rel="stylesheet" href="../style.css">
 
-<h1>Register</h1>
-<form action="/register" method="POST">
-    <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-    </div>
-    <button type="submit">Register</button>
-</form>
-<a href="/login">Login</a>
+
+<html>
+    <head>
+        <style>
+            h1 {
+                text-transform: uppercase;
+            }
+        
+            body {
+                background: linear-gradient(to right, #642b73, #c6426e);
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-family: sans-serif;
+                padding: 10px;
+            }
+        
+            form {
+                width: 450px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            button {
+                padding: 10px 80px;
+                border-radius: 5px;
+                border: none;
+                margin-top: 25px;
+            }
+        
+            div {
+                margin: 10px 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                width: 100%;
+            }
+        
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        
+            label {
+                margin: 2px;
+                font-size: smaller;
+                margin-bottom: 10px;
+                letter-spacing: -0.3px;
+                align-items: flex-start;
+            }
+        
+            input {
+                border-radius: 5px;
+                padding: 10px 15px;
+                border: none;
+                outline: none;
+                width: 450px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <link rel="stylesheet" href="../style.css">
+        
+        <h1>Register</h1>
+        <form action="/register" method="POST">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+
+        <p>Already have an account? <b><a href="/login">Login</a></b></p>
+    </body>
+</html>
+
+
+
+
